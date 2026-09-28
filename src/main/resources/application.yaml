@@ -1,7 +1,7 @@
 ktor:
     application:
         modules:
-            - id.my.sendiko.ApplicationKt.module
+            - dev.sendiko.fintrack.ApplicationKt.module
     deployment:
         port: "$APP_PORT:3000"
 jwt:

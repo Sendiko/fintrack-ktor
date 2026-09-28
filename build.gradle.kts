@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.plugin.serialization)
 }
 
-group = "id.my.sendiko"
+group = "dev.sendiko.fintrack"
 version = "0.0.1"
 
 application {

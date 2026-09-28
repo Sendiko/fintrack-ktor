@@ -1,5 +1,5 @@
-import id.my.sendiko.plugins.*
-import id.my.sendiko.services.*
+import dev.sendiko.fintrack.plugins.*
+import dev.sendiko.fintrack.services.*
 import io.ktor.server.application.*
 import io.ktor.server.netty.EngineMain
 
