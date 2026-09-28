@@ -3,8 +3,12 @@ ktor:
         modules:
             - id.my.sendiko.ApplicationKt.module
     deployment:
-        port: 8080
+        port: "$APP_PORT:3000"
 jwt:
-  domain: "https://jwt-provider-domain/"
-  audience: "jwt-audience"
-  realm: "ktor sample app"
+    domain: "$JWT_DOMAIN:https://fintrack.sendiko.my.id/"
+    audience: "$JWT_AUDIENCE:fintrack-users"
+    realm: "$JWT_REALM:fintrack"
+    secret: "$JWT_SECRET:super-secret-jwt-key"
+ollama:
+    host: "$OLLAMA_HOST:http://localhost:11434"
+    model: "$OLLAMA_MODEL:llama3.2:3b"
